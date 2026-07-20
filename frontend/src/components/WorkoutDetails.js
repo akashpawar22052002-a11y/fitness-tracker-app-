@@ -20,7 +20,7 @@ const WorkoutDetails = ({ workout }) => {
       <p><strong>Load (kg): </strong>{workout.load}</p>
       <p><strong>Reps: </strong>{workout.reps}</p>
       <p>{workout.createdAt}</p>
-      {/* 'delete' शब्दाला बटन बनवले आहे */}
+      {/* 'delete' word making button */}
       <span className="material-symbols-outlined" onClick={handleClick} style={{cursor: 'pointer', color: 'red'}}>delete</span>
     </div>
   )
