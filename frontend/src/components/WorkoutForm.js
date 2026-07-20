@@ -29,7 +29,7 @@ const WorkoutForm = () => {
       setReps('')
       setError(null)
       console.log('New workout added', json)
-      // डेटा लगेच दिसण्यासाठी पेज रिफ्रेश करा (तात्पुरता उपाय)
+    
       window.location.reload() 
     }
   }
