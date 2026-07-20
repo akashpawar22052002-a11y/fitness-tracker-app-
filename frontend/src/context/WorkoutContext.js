@@ -7,9 +7,9 @@ export const workoutsReducer = (state, action) => {
     case 'SET_WORKOUTS':
       return { workouts: action.payload }
     case 'CREATE_WORKOUT':
-      return { workouts: [action.payload, ...(state.workouts || [])] } // रिकामा असेल तर रिकामी लिस्ट वापरा
+      return { workouts: [action.payload, ...(state.workouts || [])] } 
     case 'DELETE_WORKOUT':
-      // इकडे बदल करा: जर workouts null असेल तर रिकामी लिस्ट वापरा
+      
       return { 
         workouts: (state.workouts || []).filter((w) => w._id !== action.payload._id) 
       }
