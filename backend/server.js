@@ -1,12 +1,12 @@
 require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
-const workoutRoutes = require('./routes/workout') // Fix: models ऐवजी routes वापरा
+const workoutRoutes = require('./routes/workout') 
 
 const app = express()
 
 // middleware
-app.use(express.json()) // Request body वाचण्यासाठी
+app.use(express.json()) // Request body reading
 
 // routes
 app.use('/api/workouts', workoutRoutes)
