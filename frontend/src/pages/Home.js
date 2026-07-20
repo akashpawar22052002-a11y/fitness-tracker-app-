@@ -1,12 +1,12 @@
 import { useEffect } from 'react'
-import { useWorkoutsContext } from '../hooks/useWorkoutsContext' // हे इंपोर्ट करा
+import { useWorkoutsContext } from '../hooks/useWorkoutsContext' 
 
 // components
 import WorkoutDetails from '../components/WorkoutDetails'
 import WorkoutForm from '../components/WorkoutForm'
 
 const Home = () => {
-  const { workouts, dispatch } = useWorkoutsContext() // इकडे dispatch डिक्लेअर करा
+  const { workouts, dispatch } = useWorkoutsContext() 
 
   useEffect(() => {
     const fetchWorkouts = async () => {
